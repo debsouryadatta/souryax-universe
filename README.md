@@ -32,3 +32,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Steps for building the project
+1. npx create-next-app@latest ./ , npm i @clerk/nextjs @uploadthing/react mongoose svix(for web hooks) uploadthing tailwindcss-animate(Animation package)
+2. Using Route Groups for skipping the folder names with ().
+3. Creating separate layout.tsx file for auth pages
