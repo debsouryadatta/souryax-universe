@@ -37,3 +37,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 1. npx create-next-app@latest ./ , npm i @clerk/nextjs @uploadthing/react mongoose svix(for web hooks) uploadthing tailwindcss-animate(Animation package)
 2. Using Route Groups for skipping the folder names with ().
 3. Creating separate layout.tsx file for auth pages
+4. Clerk signin, storing the api keys in the .env.local file
+5. Enabling Clerk organisations option
+
+6. Reading the Clerk docs & implementing stuffs, Protecting Routes using clerk, create a middleware.ts file for this
+
+7. Build your own sign in and sign up pages, Update your environment variables after signin/signup
+
+8. Embed the <UserButton /> on the root folder, Got the in built profile components with clerk
+9. Building the layout.tsx for the root routes
+10. Creating the shared components one by one starting with the Topbar.tsx
+11. Creating the favicon from img using converter
+12. Creating the LeftSidebar.tsx
+13. Creating a separate constants folder for storing the links
