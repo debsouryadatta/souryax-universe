@@ -50,3 +50,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 11. Creating the favicon from img using converter
 12. Creating the LeftSidebar.tsx
 13. Creating a separate constants folder for storing the links
+14. Creating the LeftSidebar.tsx
+15. npm i @clerk/themes
+16. Creating the onboarding page, creating the AccountProfile component
