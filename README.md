@@ -33,6 +33,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+
 ## Steps for building the project
 1. npx create-next-app@latest ./ , npm i @clerk/nextjs @uploadthing/react mongoose svix(for web hooks) uploadthing tailwindcss-animate(Animation package)
 2. Using Route Groups for skipping the folder names with ().
@@ -51,5 +52,21 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 12. Creating the LeftSidebar.tsx
 13. Creating a separate constants folder for storing the links
 14. Creating the LeftSidebar.tsx
-15. npm i @clerk/themes
+15. npm i @clerk/themes -> For implementing dark theme clerk components
+
+
 16. Creating the onboarding page, creating the AccountProfile component
+17. Starting to use shadcn/ui, npx shadcn-ui@latest add form, npx shadcn-ui@latest init
+18. Using useForm hook in the AccountProfile.tsx, using zod validation with it
+19. Fixing the react hook form typescript error by downgrading its version
+20. The globals.css & the tailwind.config files got overwritten during installation of shadcn so update those files again
+21. Updating the next.config.js file to give permissions to external domains and also for further mongoose usecases
+22. Still working on AccountProfile page (Till 1:42:00)mins
+
+23. Setting up the files for using uploadthing - In utils folder, in api routes
+24. The fireUrl of uploadthing was showing deprecated so downgraded the uploadthing version
+25. onSubmit func of AccountProfile component half done, the remaining half later
+26. Starting with our backend -> Connection to db in mongoose.ts, creating mongoose models
+27. Creating the backend server update func in user.action.ts and using it in the AccountProfile.tsx
+
+
