@@ -70,3 +70,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 27. Creating the backend server update func in user.action.ts and using it in the AccountProfile.tsx
 
 
+<!-- Create Thread Page -->
+28. Creating the create-thread page
+29. Creating fetchUser server action to use it in create-thread page
+30. Creating the PostThread form component inside create-thread page, implementing the same react-hook-form and zod validator inside this component
+31. Creating the thread.actions.ts, thread.model.ts(Enabling multi-lvl commenting)
+32. Error! - We can't directly create database actions directly from the browser side, so we need to mention "use server" nextjs directive in the thread.actions.ts to fix the error
+33. Calling createThread function from the PostThread component 
+for creating the threads
+
+
+<!-- Home Page -->
+34. Creating the homepage, writing the fetchPosts function
+35. Creating the ThreadCard component
+36. Creating the thread detail page, and fetching the thread details
+40. Creating the fetchThreadById function in the thread.actions.ts
+41. Creating the comment form component inside the Thread detail page
+

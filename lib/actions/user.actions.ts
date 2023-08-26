@@ -39,13 +39,26 @@ export async function updateUser({
           image,
           onboarded: true,
         },
-        { upsert: true }
+        { upsert: true } // combination of an insert and an update operation
       );
   
       if (path === "/profile/edit") {
-        revalidatePath(path);
+        revalidatePath(path); // This will make sure that the changes happen immediately on the nextjs website
       }
     } catch (error: any) {
       throw new Error(`Failed to create/update user: ${error.message}`);
+    }
+  }
+
+  export async function fetchUser(userId: string) {
+    try {
+      connectToDB();
+      return await User.findOne({ id: userId })
+    // .populate({
+    //     path: 'Communities',
+    //     model: Community
+    //   })
+    } catch (error: any) {
+      throw new Error(`Failed to fetch user: ${error.message}`);
     }
   }
