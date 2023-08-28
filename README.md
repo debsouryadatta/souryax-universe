@@ -85,5 +85,13 @@ for creating the threads
 35. Creating the ThreadCard component
 36. Creating the thread detail page, and fetching the thread details
 40. Creating the fetchThreadById function in the thread.actions.ts
+
+<!-- Comment Feature -->
 41. Creating the comment form component inside the Thread detail page
+42. Creating addCommentToThread function in the thread.actions.ts
+43. Using addCommentToThread function in the Comment component
+
+<!-- Profile Page -->
+44. Creating the Profile page component, ProfileHeader component
+45. npx shadcn-ui@latest add tabs -> For adding the tabs component
 
