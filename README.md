@@ -45,16 +45,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 7. Build your own sign in and sign up pages, Update your environment variables after signin/signup
 
-8. Embed the <UserButton /> on the root folder, Got the in built profile components with clerk
+8. Embed the <UserButton /> on the root folder, Got the built in profile components with clerk
 9. Building the layout.tsx for the root routes
 10. Creating the shared components one by one starting with the Topbar.tsx
 11. Creating the favicon from img using converter
 12. Creating the LeftSidebar.tsx
 13. Creating a separate constants folder for storing the links
-14. Creating the LeftSidebar.tsx
+14. Creating the RightSidebar.tsx & Bottombar.tsx
 15. npm i @clerk/themes -> For implementing dark theme clerk components
 
-
+<!-- Onboarding Page -->
 16. Creating the onboarding page, creating the AccountProfile component
 17. Starting to use shadcn/ui, npx shadcn-ui@latest add form, npx shadcn-ui@latest init
 18. Using useForm hook in the AccountProfile.tsx, using zod validation with it
@@ -63,9 +63,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 21. Updating the next.config.js file to give permissions to external domains and also for further mongoose usecases
 22. Still working on AccountProfile page (Till 1:42:00)mins
 
+<!-- Uploadthing Config -->
 23. Setting up the files for using uploadthing - In utils folder, in api routes
 24. The fireUrl of uploadthing was showing deprecated so downgraded the uploadthing version
 25. onSubmit func of AccountProfile component half done, the remaining half later
+
+<!-- Backend Started -->
 26. Starting with our backend -> Connection to db in mongoose.ts, creating mongoose models
 27. Creating the backend server update func in user.action.ts and using it in the AccountProfile.tsx
 
@@ -93,5 +96,7 @@ for creating the threads
 
 <!-- Profile Page -->
 44. Creating the Profile page component, ProfileHeader component
-45. npx shadcn-ui@latest add tabs -> For adding the tabs component
+45. npx shadcn-ui@latest add tabs -> For adding the tabs components inside the Profile page
+46. Creating the ThreadsTab component, creating the fetchUserPosts func in the user.actions & using it in the Profile page
+47. Learned how populate works in mongoose, need to know some more
 
