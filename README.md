@@ -100,3 +100,19 @@ for creating the threads
 46. Creating the ThreadsTab component, creating the fetchUserPosts func in the user.actions & using it in the Profile page
 47. Learned how populate works in mongoose, need to know some more
 
+<!-- Search Page -->
+48. Creating the search page, creating the fetchUser function in the user.actions for getting the users from the database
+49. Using the fetchUser func in the search Page.tsx, creating a UserCard component inside the search page for displaying the users
+
+ <!--Activity Page  -->
+ 50. Creating the activity page, creating the getActivity function for getting the replies on the threads
+ 51. And using the getActivity function in the activity page
+ 51. Centering the auth pages, like - signin/signup pages etc...
+
+ <!-- Community Page -->
+ 52. Before developing the community page, we first need to create Organizations with the help of Clerk, but after creating the organization we need to have web hooks listening to the clerk events so that we can update our database accordingly
+ 53. Lets gets started with creating those web hook listeners
+ 54. Copying the code of webhook -> route.ts then creating the community.actions.ts(also copying its code)
+ 55. Creating our community schema/model
+ 56. Deploying API routes for the webhooks to work
+
