@@ -114,5 +114,12 @@ for creating the threads
  53. Lets gets started with creating those web hook listeners
  54. Copying the code of webhook -> route.ts then creating the community.actions.ts(also copying its code)
  55. Creating our community schema/model
- 56. Deploying API routes for the webhooks to work
+ 56. Deploying API routes for the webhooks to work, creating webhook endpoints in clerk -> getting the NEXT_CLERK_WEBHOOK_SECRET, reploying adding the NEXT_CLERK_WEBHOOK_SECRET on Vercel
+ 57. Any event will trigger the functions in the webhook/route.ts which will add the stuffs on our database(i.e. by community.actions)
+ 58. Creating an organisation "Dev Community".
+
+ <!-- Community Implementations -->
+ 59. Modifying the PostThread, adding organisation in communityId, writing the extra code for community which would be visible just under the ThreadCards
+ 60. Also changing the createThread function adding the community options
+ 61. Creating community page
 

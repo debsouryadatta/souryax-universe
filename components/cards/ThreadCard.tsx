@@ -142,7 +142,7 @@ const ThreadCard = ({
           </div>
         )}
   
-        {/* {!isComment && community && (
+        {!isComment && community && (
           <Link
             href={`/communities/${community.id}`}
             className='mt-5 flex items-center'
@@ -160,7 +160,7 @@ const ThreadCard = ({
               className='ml-1 rounded-full object-cover'
             />
           </Link>
-        )} */}
+        )}
       </article>
     )
 };
