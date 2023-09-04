@@ -44,6 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 6. Reading the Clerk docs & implementing stuffs, Protecting Routes using clerk, create a middleware.ts file for this
 
 7. Build your own sign in and sign up pages, Update your environment variables after signin/signup
+• Copying the clerk keys in the .env.local file
 
 8. Embed the <UserButton /> on the root folder, Got the built in profile components with clerk
 9. Building the layout.tsx for the root routes
@@ -112,7 +113,7 @@ for creating the threads
  <!-- Community Page -->
  52. Before developing the community page, we first need to create Organizations with the help of Clerk, but after creating the organization we need to have web hooks listening to the clerk events so that we can update our database accordingly
  53. Lets gets started with creating those web hook listeners
- 54. Copying the code of webhook -> route.ts then creating the community.actions.ts(also copying its code)
+ 54. Copying the code of webhook/clerk -> route.ts then creating the community.actions.ts(also copying its code)
  55. Creating our community schema/model
  56. Deploying API routes for the webhooks to work, creating webhook endpoints in clerk -> getting the NEXT_CLERK_WEBHOOK_SECRET, reploying adding the NEXT_CLERK_WEBHOOK_SECRET on Vercel
  57. Any event will trigger the functions in the webhook/route.ts which will add the stuffs on our database(i.e. by community.actions)
@@ -121,5 +122,19 @@ for creating the threads
  <!-- Community Implementations -->
  59. Modifying the PostThread, adding organisation in communityId, writing the extra code for community which would be visible just under the ThreadCards
  60. Also changing the createThread function adding the community options
- 61. Creating community page
+ 61. Creating the community profile page copying some code of profile page
+ 62. Modifying the ThreadsTab component, using the fetchCommunityPosts function if accountType === "Community"
+
+ <!-- Communities -->
+ 63. Creating the Community search page, creating the Community Card
+
+ 64. Modifying the onboarding page with the database userinfo
+
+ Todos: 
+ 1. Add the search functionality with the searchbar
+ 2. Show no. of replies below the ThreadCards
+ 3. Suggested Commnunities & suggested Users
+ 4. Profile edit functionality
+ 5. Delete the threads
+
 
