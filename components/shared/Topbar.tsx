@@ -6,8 +6,8 @@ import Link from "next/link";
 function Topbar() {
   return (
     <nav className="topbar">
-      <Link href="/" className="flex items-center gap-4">
-        <Image src="/assets/logo.svg" alt="logo" width={28} height={28} />
+      <Link href="/" className="flex items-center">
+        <Image src="https://res.cloudinary.com/diyxwdtjd/image/upload/v1694889457/Personal/sy-logo-removebg-preview_emdq4n.png" alt="logo" width={70} height={70} />
         <p className="text-heading3-bold text-light-1 max-xs:hidden">Souryax Universe</p>
       </Link>
 

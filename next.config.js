@@ -34,6 +34,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "blog.hubspot.com",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
 };
