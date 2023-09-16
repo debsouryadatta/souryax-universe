@@ -108,7 +108,7 @@ for creating the threads
  <!--Activity Page  -->
  50. Creating the activity page, creating the getActivity function for getting the replies on the threads
  51. And using the getActivity function in the activity page
- 51. Centering the auth pages, like - signin/signup pages etc...
+ 51. Centering the auth pages, like - signin/signup pages etc... by altering the layout.tsx
 
  <!-- Community Page -->
  52. Before developing the community page, we first need to create Organizations with the help of Clerk, but after creating the organization we need to have web hooks listening to the clerk events so that we can update our database accordingly
@@ -129,6 +129,12 @@ for creating the threads
  63. Creating the Community search page, creating the Community Card
 
  64. Modifying the onboarding page with the database userinfo
+
+ <!-- Extra Features -->
+ 65. Adding the Loader Component
+ 66. Uncommenting the Suggested Communities & Suggested Users section in the RightSidebar.tsx
+ 67. Uncommenting the Search Component & the Pagination Component in the RightSidebar.tsx after understanding them
+
 
  Todos: 
  1. Add the search functionality with the searchbar
