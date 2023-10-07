@@ -55,7 +55,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 14. Creating the RightSidebar.tsx & Bottombar.tsx
 15. npm i @clerk/themes -> For implementing dark theme clerk components
 
-<!-- Onboarding Page -->
+### Onboarding Page
 16. Creating the onboarding page, creating the AccountProfile component
 17. Starting to use shadcn/ui, npx shadcn-ui@latest add form, npx shadcn-ui@latest init
 18. Using useForm hook in the AccountProfile.tsx, using zod validation with it
@@ -64,17 +64,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 21. Updating the next.config.js file to give permissions to external domains and also for further mongoose usecases
 22. Still working on AccountProfile page (Till 1:42:00)mins
 
-<!-- Uploadthing Config -->
+### Uploadthing Config
 23. Setting up the files for using uploadthing - In utils folder, in api routes
 24. The fireUrl of uploadthing was showing deprecated so downgraded the uploadthing version
 25. onSubmit func of AccountProfile component half done, the remaining half later
 
-<!-- Backend Started -->
+### Backend Started
 26. Starting with our backend -> Connection to db in mongoose.ts, creating mongoose models
 27. Creating the backend server update func in user.action.ts and using it in the AccountProfile.tsx
 
 
-<!-- Create Thread Page -->
+### Create Thread Page
 28. Creating the create-thread page
 29. Creating fetchUser server action to use it in create-thread page
 30. Creating the PostThread form component inside create-thread page, implementing the same react-hook-form and zod validator inside this component
@@ -84,33 +84,33 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 for creating the threads
 
 
-<!-- Home Page -->
+### Home Page
 34. Creating the homepage, writing the fetchPosts function
 35. Creating the ThreadCard component
 36. Creating the thread detail page, and fetching the thread details
 40. Creating the fetchThreadById function in the thread.actions.ts
 
-<!-- Comment Feature -->
+### Comment Feature
 41. Creating the comment form component inside the Thread detail page
 42. Creating addCommentToThread function in the thread.actions.ts
 43. Using addCommentToThread function in the Comment component
 
-<!-- Profile Page -->
+### Profile Page
 44. Creating the Profile page component, ProfileHeader component
 45. npx shadcn-ui@latest add tabs -> For adding the tabs components inside the Profile page
 46. Creating the ThreadsTab component, creating the fetchUserPosts func in the user.actions & using it in the Profile page
 47. Learned how populate works in mongoose, need to know some more
 
-<!-- Search Page -->
+### Search Page
 48. Creating the search page, creating the fetchUser function in the user.actions for getting the users from the database
 49. Using the fetchUser func in the search Page.tsx, creating a UserCard component inside the search page for displaying the users
 
- <!--Activity Page  -->
+ ### Activity Page 
  50. Creating the activity page, creating the getActivity function for getting the replies on the threads
  51. And using the getActivity function in the activity page
  51. Centering the auth pages, like - signin/signup pages etc... by altering the layout.tsx
 
- <!-- Community Page -->
+ ### Community Page
  52. Before developing the community page, we first need to create Organizations with the help of Clerk, but after creating the organization we need to have web hooks listening to the clerk events so that we can update our database accordingly
  53. Lets gets started with creating those web hook listeners
  54. Copying the code of webhook/clerk -> route.ts then creating the community.actions.ts(also copying its code)
@@ -119,24 +119,24 @@ for creating the threads
  57. Any event will trigger the functions in the webhook/route.ts which will add the stuffs on our database(i.e. by community.actions)
  58. Creating an organisation "Dev Community".
 
- <!-- Community Implementations -->
+ ### Community Implementations
  59. Modifying the PostThread, adding organisation in communityId, writing the extra code for community which would be visible just under the ThreadCards
  60. Also changing the createThread function adding the community options
  61. Creating the community profile page copying some code of profile page
  62. Modifying the ThreadsTab component, using the fetchCommunityPosts function if accountType === "Community"
 
- <!-- Communities -->
+ ### Communities
  63. Creating the Community search page, creating the Community Card
 
  64. Modifying the onboarding page with the database userinfo
 
- <!-- Extra Features -->
+ ### Extra Features
  65. Adding the Loader Component
  66. Uncommenting the Suggested Communities & Suggested Users section in the RightSidebar.tsx
  67. Uncommenting the Search Component & the Pagination Component in the RightSidebar.tsx after understanding them
 
 
- Todos: 
+ ### Todos: 
  1. Add the search functionality with the searchbar
  2. Show no. of replies below the ThreadCards
  3. Suggested Commnunities & suggested Users

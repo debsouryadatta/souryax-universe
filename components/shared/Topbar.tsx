@@ -13,7 +13,8 @@ function Topbar() {
 
       <div className="flex items-center gap-1">
         <div className="block md:hidden">
-          <SignedIn>
+          {/* // will be rendered only if there's a User with an active Session signed in */}
+          <SignedIn>  
             <SignOutButton>
               <div className="flex cursor-pointer">
                 <Image
